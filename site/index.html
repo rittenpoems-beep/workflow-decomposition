@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Workflow Decomposition Is All You Need｜工作流拆解册</title>
+<meta name="description" content="AI 可以代替大量操作，但你仍然需要知道什么应该被完成、怎样组织完成，以及如何判断它是否合格。一份来自三维、音乐与软件实验的工作流拆解册。">
+<meta name="theme-color" content="#F6F1E7">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Workflow Decomposition Is All You Need">
+<meta property="og:description" content="拆解专业工作流程，就是你所需要的一切。来自三维、音乐与软件实验的工作流拆解册。">
+<meta property="og:image" content="https://rittenpoems-beep.github.io/workflow-decomposition/assets/images/og-cover.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+<a class="skip" href="#main">跳到正文</a>
+<div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+
+<header class="masthead" id="masthead">
+  <div class="shell masthead-inner">
+    <a class="brand" href="#top" aria-label="Workflow Decomposition 首页">
+      <span class="brand-mark" aria-hidden="true">拆</span>
+      <span class="brand-text">
+        <strong>WORKFLOW DECOMPOSITION</strong>
+        <em>工作流拆解册 · Ritten Poems</em>
+      </span>
+    </a>
+    <nav class="topnav" id="topnav" aria-label="主导航">
+      <a href="#article">文章</a>
+      <a href="#atlas">工作流地图</a>
+      <a href="#routes">路线</a>
+      <a href="#gates">验收</a>
+      <a href="#cases">案例</a>
+      <a href="#worksheet">工作表</a>
+      <a class="nav-ext" href="https://github.com/rittenpoems-beep/workflow-decomposition" target="_blank" rel="noopener">GitHub ↗</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="topnav">菜单</button>
+  </div>
+</header>
+
+<main id="main">
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="shell">
+      <div class="hero-meta">
+        <span>FIELD MANUAL / 拆解册</span>
+        <span>PLATE 00</span>
+        <span>RITTEN POEMS · 2026.10</span>
+      </div>
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">AI · 专业流程 · 人的判断</p>
+          <h1>Workflow<br>Decomposition<br><span>Is All You Need</span></h1>
+          <p class="hero-cn">拆解专业工作流程，<br>就是你所需要的一切。</p>
+          <p class="hero-lede">AI 可以代替大量操作，但你仍然需要知道什么应该被完成、怎样组织完成，以及如何判断它是否合格。</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#article">开始阅读</a>
+            <a class="btn ghost" href="#atlas">打开工作流地图</a>
+          </div>
+          <p class="hero-footnote">不是提示词手册。是一份来自真实实验的流程拆解与验收记录。</p>
+        </div>
+
+        <aside class="hero-plate" aria-label="五层工作流结构">
+          <div class="plate-head">
+            <span>PLATE 00 / THE STACK</span>
+            <span>5 LAYERS</span>
+          </div>
+          <ol class="stack-mini">
+            <li class="layer-human"><span>01</span><b>定义</b><i>DEFINE</i><em>人</em></li>
+            <li class="layer-both"><span>02</span><b>拆解</b><i>DECOMPOSE</i><em>人 + AI</em></li>
+            <li class="layer-both"><span>03</span><b>选路</b><i>ROUTE</i><em>人 + AI</em></li>
+            <li class="layer-ai"><span>04</span><b>执行</b><i>EXECUTE</i><em>AI</em></li>
+            <li class="layer-human"><span>05</span><b>验收</b><i>ACCEPT</i><em>人</em></li>
+          </ol>
+          <div class="plate-foot">
+            <p>杠杆不在模型里，在流程结构里。</p>
+            <span>↓ 向下，AI 承担更多执行</span>
+          </div>
+        </aside>
+      </div>
+      <div class="hero-bottom">
+        <span>SCROLL TO DECOMPOSE</span>
+        <span class="hero-line" aria-hidden="true"></span>
+        <span>六节文章 · 五个图示 · 三个案例 · 四个交互工具</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- MANIFESTO -->
+  <section class="manifesto">
+    <div class="shell">
+      <p class="kicker">THESIS / 论点</p>
+      <blockquote class="manifesto-quote">
+        你拥有一个装满世界上几乎所有工具的工具箱，却可能因为不知道螺丝刀的存在，而让 AI 一直尝试用锤子拧螺丝。
+      </blockquote>
+      <div class="manifesto-grid">
+        <article class="reveal">
+          <span class="num">01</span>
+          <h3>这不是提示词问题</h3>
+          <p>「更真实一点」「更有电影感」无法被验收。缺的是参照、约束与完成标准。</p>
+        </article>
+        <article class="reveal">
+          <span class="num">02</span>
+          <h3>也不是工具问题</h3>
+          <p>大多数工具都能工作。问题在于它是否匹配你真正要交付的东西。</p>
+        </article>
+        <article class="reveal">
+          <span class="num">03</span>
+          <h3>是路线与验收问题</h3>
+          <p>AI 擅长在既定路线上修补；它未必会主动发现，这条路线从一开始就不适合。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ARTICLE -->
+  <section class="article-section" id="article">
+    <div class="shell">
+      <div class="section-head">
+        <div>
+          <p class="kicker">01 / THE ESSAY</p>
+          <h2>把专业工作，<br>拆成一条可验收的生产线</h2>
+        </div>
+        <p class="section-note">原文全文 · 约 18 分钟<br>Ritten Poems · 2026.10</p>
+      </div>
+
+      <div class="article-layout">
+        <aside class="toc" aria-label="文章目录">
+          <p class="toc-title">CONTENTS</p>
+          <nav>
+            <a href="#s01" class="active"><span>01</span>从一句话许愿，到理解专业流程</a>
+            <a href="#s02"><span>02</span>这不只是三维制作</a>
+            <a href="#s03"><span>03</span>被重新分配的专业能力</a>
+            <a href="#s04"><span>04</span>那为什么不让 AI 自己拆解？</a>
+            <a href="#s05"><span>05</span>一个极其夸张的杠杆</a>
+            <a href="#s06"><span>06</span>Workflow Decomposition Is All You Need</a>
+          </nav>
+          <a class="toc-download" href="https://github.com/rittenpoems-beep/workflow-decomposition/blob/main/article/workflow-decomposition.md" target="_blank" rel="noopener">在 GitHub 读原文 ↗</a>
+        </aside>
+
+        <article class="prose">
+          <p class="prose-lede">最近，我做了一些实验：尝试让 AI 使用 Blender 制作三维场景、完成建模与渲染，也尝试让它自主进行音乐设计与制作。</p>
+          <p>这些实验让我逐渐意识到一件事：</p>
+          <p class="pullquote">在今天，AI 能帮助你完成多么复杂的工作，仍然很大程度上取决于你作为「驾驶员」的水平。</p>
+          <p>但这里的水平，已经不再完全等同于你对某款专业软件的熟练程度。</p>
+
+          <h2 id="s01"><span>01</span>从一句话许愿，到理解专业流程</h2>
+          <p>最开始，我对三维制作几乎一无所知。</p>
+          <p>我可以直接告诉 AI：「帮我制作一个电影级写实的三维场景。」</p>
+          <p>它确实能够做出来。甚至对一个刚刚接触 Blender 的人而言，完成度已经相当惊人。</p>
+          <p>但作品仍然存在许多问题：构图平庸、材质缺乏真实感、灯光没有层次，整体看起来更像一次技术演示，而不是成熟的艺术作品。</p>
+          <p>起初，我试图通过不断修改提示词改善效果。</p>
+          <p>后来，我开始了解专业的三维制作流程。</p>
+          <p>我发现，在许多专业项目中，一件最终呈现给观众的三维作品，可能经历以下过程：</p>
+          <ol class="stage-list">
+            <li><b>概念设计</b>：确定风格、视觉语言、参考素材与整体构想。</li>
+            <li><b>平面设计</b>：绘制概念图，明确造型、比例、结构与色彩。</li>
+            <li><b>资产拆解</b>：把复杂场景拆分为可以独立制作的模型和组件。</li>
+            <li><b>三维建模</b>：根据用途建立基础几何结构。</li>
+            <li><b>雕刻与细化</b>：按项目需要使用 ZBrush 等工具增加细节，并处理拓扑、UV、贴图等工作。</li>
+            <li><b>场景组装</b>：完成模型摆放、材质、环境与摄像机设置。</li>
+            <li><b>灯光与渲染</b>：建立视觉层次，控制光照、氛围和最终输出。</li>
+            <li><b>后期处理</b>：调整画面、合成效果，完成最终交付。</li>
+          </ol>
+          <p>不同团队和项目的流程当然不会完全相同。</p>
+          <p>但关键在于：<strong>这是一整套可以被理解、拆解、分配、执行和检验的工作流程。</strong></p>
+
+          <figure class="plate reveal">
+            <a class="plate-img" href="assets/diagrams/workflow-3d.svg" data-lightbox data-caption="图 1｜把专业 CG 流程画成生产线：每个阶段有输入、输出、执行者与验收点。">
+              <img src="assets/diagrams/workflow-3d.svg" alt="三维制作工作流：概念设计、概念图、资产拆解、建模、材质、灯光渲染、后期交付八个阶段，以及六个验收闸门。" loading="lazy">
+            </a>
+            <figcaption><span>PLATE 01 / 3D WORKFLOW</span>把专业 CG 流程画成生产线：每个阶段有输入、输出、执行者与验收点。</figcaption>
+          </figure>
+
+          <p>过去，一个人想独立完成这一切，可能需要花费数年学习建模、雕刻、贴图、灯光、渲染等多个专业领域。</p>
+          <p>而今天，我可以尝试让 AI 分别承担其中的执行任务。</p>
+          <p>我不一定知道 Blender 里的每一个按钮在哪里，也不一定会使用 ZBrush 雕刻复杂模型。</p>
+          <p>但只要我开始理解专业团队是怎样完成工作的，我就有机会组织 AI 按照相同的逻辑推进项目。</p>
+          <p>这就是我最近感受到的巨大变化。</p>
+
+          <h2 id="s02"><span>02</span>这不只是三维制作</h2>
+          <p>音乐也是一样。</p>
+          <p>我最开始让 AI 制作音乐时，甚至很难准确描述自己想要的声音。</p>
+          <p>我知道一首曲子听起来应该是什么感觉，却不知道如何把这种感觉变成可执行的制作要求。</p>
+          <p>后来，我开始接触编曲、配器、音色设计、MIDI、混音、母带处理等概念。</p>
+          <p>于是，我逐渐能够理解一首音乐作品是怎样被生产出来的。</p>
+          <p>哪些部分需要先设计？哪些部分能够独立完成？什么环节需要反复试听？最后应当如何组合、调整与输出？</p>
+          <p>我不需要立即成为一名专业音乐制作人，才能开始利用这些知识。</p>
+
+          <figure class="plate reveal">
+            <a class="plate-img" href="assets/diagrams/workflow-music.svg" data-lightbox data-caption="图 2｜音乐不是「生成一段音频」，而是一条从参考、约束、动机到混音与母带的链路。">
+              <img src="assets/diagrams/workflow-music.svg" alt="音乐制作工作流：参考与流派分析、约束定义、作曲动机、编曲配器、音色采样、人声演唱、混音、母带交付八个阶段。" loading="lazy">
+            </a>
+            <figcaption><span>PLATE 02 / MUSIC WORKFLOW</span>音乐不是「生成一段音频」，而是一条从参考、约束、动机到混音与母带的链路。</figcaption>
+          </figure>
+
+          <p>同样的情况发生在平面设计、影视制作和软件工程中。</p>
+          <p>一个完整的软件产品，也可以按照需求分析、架构设计、前后端实现、数据库设计、测试、部署、运维等阶段展开。</p>
+          <p>以前，掌握其中任何一个专业领域，都需要大量学习、实践和积累。</p>
+          <p><strong>现在，很多执行任务可以交给 AI，而我们获取这些领域工作流程知识的成本，已经远远低于亲自掌握全部操作技能的成本。</strong></p>
+          <p>更重要的是，这种方法具有跨领域迁移能力。</p>
+          <p>当你习惯于拆解任务、查找行业标准、组织执行与检查结果之后，就可以把类似的方法应用到一个又一个陌生领域。</p>
+
+          <h2 id="s03"><span>03</span>被重新分配的专业能力</h2>
+          <p>这并不意味着专业知识已经没有价值。</p>
+          <p>恰恰相反，我认为专业知识正在以另一种方式变得重要。</p>
+          <p>假设两个从未学习过三维制作的人，使用同样的 AI 模型和同样的软件。</p>
+          <p>第一个人只会不断提出要求：「更真实一点。」「更有电影感。」「再高级一点。」</p>
+          <p>第二个人则会先研究参考作品，确定艺术方向，拆解场景资产，明确材质标准，设计布光方案，并在每个阶段检查结果。</p>
+          <p>即使两个人都不会亲自操作复杂的三维软件，最终产物也很可能产生显著差距。</p>
+          <p>这说明一个问题：</p>
+          <p class="pullquote">AI 可以代替大量操作，但你仍然需要知道什么应该被完成、怎样组织完成，以及如何判断它是否合格。</p>
+          <p>过去，我们必须通过长期练习积累操作熟练度。现在，一部分操作熟练度可以由 AI 提供。</p>
+          <p>而理解流程、表达需求、做出判断、发现错误和不断迭代，开始成为跨专业工作的重要能力。</p>
+          <p>你不需要在每一个领域都成为专家，才有机会开始做出作品。</p>
+          <p>当然，能够做出 Demo，并不代表已经具备专业交付能力。</p>
+          <p>真实项目还有性能、稳定性、可维护性、成本、版权、安全与行业规范等要求。专业人士积累的隐性经验，也并不是画出一张流程图就能全部获得。</p>
+          <p>但至少，对大量数字化工作而言，<strong>进入一个专业领域并做出第一个可观成果的门槛，已经出现了实质性的下降。</strong></p>
+
+          <figure class="plate reveal">
+            <a class="plate-img" href="assets/diagrams/acceptance-gates.svg" data-lightbox data-caption="图 3｜「能运行」与「值得交付」之间，隔着参照、品味与责任。">
+              <img src="assets/diagrams/acceptance-gates.svg" alt="冒烟测试与完整验收的对比，以及 Quiet Room、BWU v4、雨夜便利店三个案例的四道闸门。" loading="lazy">
+            </a>
+            <figcaption><span>PLATE 05 / ACCEPTANCE</span>「能运行」与「值得交付」之间，隔着参照、品味与责任。</figcaption>
+          </figure>
+
+          <h2 id="s04"><span>04</span>那为什么不让 AI 自己拆解？</h2>
+          <p>写到这里，我想一定会有人提出一个问题：</p>
+          <p>「既然 AI 已经这么强大，为什么还需要我自己去学习这些专业流程？我直接让 AI 自己研究、自己选择工具、自己完成不就行了吗？」</p>
+          <p>这是一个很合理的质疑。</p>
+          <p>事实上，我最开始就是这么做的。</p>
+          <p>我把目标交给 AI，允许它自行规划、选择工具、调用软件、检查结果，甚至在不需要人工干预的情况下持续工作数个小时。</p>
+          <p>理论上，这应该是一个相当理想的方案。</p>
+          <p>现代 AI 掌握着极其广泛的技术知识。它知道大量软件、编程语言、开发框架和专业工具，也可以借助搜索、文档和测试不断补充信息。</p>
+          <p>它所能够接触到的技术路线，远远超过我个人所了解的范围。</p>
+          <p><strong>那么，为什么最终的结果仍然经常不尽如人意？</strong></p>
+          <p>我最近的一次音乐制作实验给了我一些启发。</p>
+          <p>当时，AI 正在使用 ACE Studio 完成音乐制作。我观察了它的操作过程后，对这个工具是否适合整个制作流程产生了怀疑。</p>
+          <p>我不懂专业音乐制作，也没有足够的经验来判断它是不是正确的选择。</p>
+          <p>但我仍然询问 AI：「你用着怎么样？要不要我给你重新下一个？我觉得它不太专业。」</p>
+          <p>AI 给我的回答非常肯定。</p>
+          <p>它认为完全没有必要更换软件，因为 ACE Studio 足够专业，能够满足当前制作任务的大部分需求。</p>
+          <p>然而，随着制作不断推进，我发现最终效果与自己的预期仍然存在明显差距。</p>
+          <p>这并不能证明 ACE Studio 本身不专业，也不能说明换一个软件就一定会更好。</p>
+          <p>真正值得注意的是：<strong>AI 对现有工具的肯定，并没有建立在充分比较其他制作路线的基础上。</strong></p>
+          <p>它可以检查某个功能是否存在，尝试某种操作能否成功，运行测试验证流程是否正常。</p>
+          <p>但这种局部验证，并不等于它已经找到了最适合目标的整体方案。</p>
+          <p>就像软件工程里的冒烟测试。一个程序成功启动、主要功能可以运行，并不能证明它的架构合理、性能优秀，或者它就是解决问题的最佳选择。</p>
+          <p>我在三维制作领域也遇到了相似的问题。</p>
+          <p>假设一个人完全不了解三维技术。他不知道 Blender、3ds Max、CAD，也不理解 Three.js 与专业三维内容创作软件的不同定位。</p>
+          <p>当他要求 AI 制作一个三维场景时，AI 完全可能选择自己容易生成和执行的技术路线，例如直接编写 Three.js 场景。</p>
+          <p>这当然不意味着 Three.js 不专业。如果目标是浏览器中的实时交互展示，它甚至可能是非常合适的选择。</p>
+          <p>但如果目标是制作可编辑的复杂三维资产、完成高质量离线渲染，或者交付可以进入专业美术管线的工程文件，情况就完全不同了。</p>
+          <p><strong>问题不在于 AI 没有能力使用更合适的工具，而在于它未必会主动发现自己选错了工具。</strong></p>
+          <p>它可能已经找到了一条能够完成任务的路线，于是不断在这条路线上修补问题、增加功能、进行测试。</p>
+          <p>每一个步骤看起来都合理，每一次修改似乎都在向目标前进。但整条路线可能从一开始就不适合最终需求。</p>
+          <p>这让我想到一个非常直观的比喻：</p>
+          <p class="pullquote">你拥有一个装满世界上几乎所有工具的工具箱，却可能因为不知道螺丝刀的存在，而让 AI 一直尝试用锤子拧螺丝。</p>
+          <p>它甚至有可能真的设计出某种用锤子拧动螺丝的方法。然后认真地告诉你：看，它可以工作。</p>
+          <p>可问题是，为什么不用螺丝刀呢？</p>
+
+          <figure class="plate reveal">
+            <a class="plate-img" href="assets/diagrams/route-divergence.svg" data-lightbox data-caption="图 4｜需求不指定工具；交付物、编辑方式、实时性与画质，才决定路线。">
+              <img src="assets/diagrams/route-divergence.svg" alt="同一份三维简报分叉为 Three.js 浏览器实时路线与 Blender 可编辑资产、离线渲染路线，并说明错误路线的返工代价。" loading="lazy">
+            </a>
+            <figcaption><span>PLATE 03 / ROUTE DIVERGENCE</span>需求不指定工具；交付物、编辑方式、实时性与画质，才决定路线。</figcaption>
+          </figure>
+
+          <p>我目前的猜想是，这里面存在一种技术路径依赖。</p>
+          <p>AI 很善于在已经确定的目标、上下文和工具环境中继续执行、发现问题、修复错误。</p>
+          <p>但它不一定会在每个关键节点主动重新比较所有可能的技术路线，更不一定能在缺少明确验收标准时，准确判断当前路线是否值得继续投入。</p>
+          <p>当然，这不是 AI 永远无法解决的问题。</p>
+          <p>如果我们明确要求它比较不同方案、查询专业工作流、制定验收标准，并允许它推翻自己先前的选择，结果可能明显改善。</p>
+          <p>未来更强大的 AI，也完全可能拥有更加成熟的自主规划与路线选择能力。</p>
+          <p>但至少在我目前的实践里，让 AI 自主完成一切，并不总是比我先了解一点专业知识、再指导它执行更加有效。</p>
+          <p>所以，我开始修正自己最初的想法。</p>
+          <p><strong>我们不一定需要学习如何亲手操作所有工具，但仍然值得学习专业人士为什么选择这些工具，以及他们为什么按照这样的流程工作。</strong></p>
+          <p>因为只有知道还存在其他可能性，我们才更容易意识到眼前这条路或许根本不值得走下去。</p>
+          <p>我可以让 AI 帮我拆解专业工作流程，也可以让它研究和比较不同的软件。</p>
+          <p>但如果我自己对这个行业一无所知，我甚至可能不知道应该要求它进行这样的比较。</p>
+          <p>这就是我认为人类暂时仍然需要掌握一些专业认知的原因。</p>
+          <p>不是为了亲自执行每一个步骤。而是为了在必要时，有能力提出一个问题：</p>
+          <p class="pullquote">「我们为什么一定要这样做？有没有更合适的方法？」</p>
+
+          <h2 id="s05"><span>05</span>一个极其夸张的杠杆</h2>
+          <p>这也是我认为 AI 真正具有革命性潜力的地方。</p>
+          <p>过去，如果你想将一项专业服务的产能提高十倍，往往需要更多熟练人员、更完善的培训、更高效的工具和更复杂的组织管理。</p>
+          <p>现在，我们多了一种可能：将专业工作拆解为可执行的流程，再利用 AI 承担其中大量耗时、重复或技术密集的环节。</p>
+          <p>一个人有机会完成过去需要多人协作才能完成的部分工作。</p>
+          <p>小型团队也有机会触及过去因为人力成本太高而无法进入的市场。</p>
+          <p>如果这种效率提升能够持续转化为更低的生产成本，并通过竞争传递到市场，许多数字产品与服务的价格就有进一步下降的空间。</p>
+          <p>这当然不适用于所有行业。</p>
+          <p>涉及物理操作、重大安全责任、严格监管或复杂现实环境的工作，仍然存在无法轻易绕过的约束。</p>
+          <p>但在软件开发、设计、内容制作、数据处理以及大量数字化业务中，这种变化已经值得我们认真对待。</p>
+          <p>更让我兴奋的是，它让一个人的探索范围变得前所未有地宽广。</p>
+          <p>一个对音乐感兴趣的程序员，可以开始尝试制作音乐。一个没有专业建模经验的创作者，可以开始设计复杂的三维场景。一个不懂前端框架的普通人，可以尝试制作自己的软件产品。</p>
+          <p>他们的第一个作品未必优秀，也未必能够商业化，但他们终于可以以一种低得多的成本，把想法变成能够运行、观看、聆听和验证的东西。</p>
+
+          <figure class="plate reveal">
+            <a class="plate-img" href="assets/diagrams/leverage-stack.svg" data-lightbox data-caption="图 5｜同样的模型，被组织成不同的流程，就会产生完全不同的交付半径。">
+              <img src="assets/diagrams/leverage-stack.svg" alt="五层杠杆结构：定义、拆解、选路、执行、验收，以及人的判断乘以 AI 的执行乘以流程结构的杠杆等式。" loading="lazy">
+            </a>
+            <figcaption><span>PLATE 04 / LEVERAGE</span>同样的模型，被组织成不同的流程，就会产生完全不同的交付半径。</figcaption>
+          </figure>
+
+          <h2 id="s06"><span>06</span>Workflow Decomposition Is All You Need</h2>
+          <p>这个标题当然是一种夸张。</p>
+          <p>仅仅知道一个行业的流程，还不足以掌握整个行业。</p>
+          <p>理解专业流程也不代表拥有专业审美、经验、创造力或者承担责任的能力。</p>
+          <p>但它已经足够成为一个极其有价值的起点。</p>
+          <p>当你面对一个完全陌生的领域时，你可以先研究：</p>
+          <ul class="question-list">
+            <li>这个领域的专业人士究竟是如何工作的？</li>
+            <li>他们通过哪些环节把原始需求变成最终作品？</li>
+            <li>每个环节需要什么输入，产出什么结果？</li>
+            <li>哪些任务可以被 AI 执行？哪些地方需要人类判断？</li>
+            <li>又应该采用什么标准验收？</li>
+          </ul>
+          <p>当这些问题逐渐清楚，原本遥不可及的专业工作就会变成一组可以尝试执行、不断验证和逐步优化的任务。</p>
+          <p>而 AI 正在让这种尝试的成本持续降低。</p>
+          <p>我认为，这将深刻改变人类学习技能、组织劳动和创造产品的方式。</p>
+          <p class="pullquote">在越来越多的领域，理解一项专业工作如何完成，正在成为亲自完成这项工作的入口。</p>
+          <p class="prose-sign">Workflow Decomposition Is All You Need.<br><span>Ritten Poems · 2026.10</span></p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ATLAS -->
+  <section class="atlas-section dark" id="atlas">
+    <div class="shell">
+      <div class="section-head on-dark">
+        <div>
+          <p class="kicker">02 / WORKFLOW ATLAS</p>
+          <h2>换一个领域，<br>先找它的生产线</h2>
+        </div>
+        <p class="section-note">四个领域，同一套结构：<br>输入 → 输出 → 人的判断 → 验收点。</p>
+      </div>
+
+      <div class="atlas-shell reveal">
+        <div class="atlas-tabs" id="atlasTabs" role="tablist" aria-label="选择领域"></div>
+        <p class="atlas-intro" id="atlasIntro"></p>
+        <div class="atlas-body">
+          <div class="atlas-rail" id="atlasRail" role="tablist" aria-label="选择阶段" aria-orientation="vertical"></div>
+          <div class="atlas-detail" id="atlasDetail" aria-live="polite"></div>
+        </div>
+        <div class="atlas-foot">
+          <span>点击阶段查看细节 · 支持键盘方向键</span>
+          <span id="atlasCount"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ROUTES -->
+  <section class="routes-section" id="routes">
+    <div class="shell">
+      <div class="section-head">
+        <div>
+          <p class="kicker">03 / ROUTE COMPARATOR</p>
+          <h2>同一个需求，<br>两条完全不同的路线</h2>
+        </div>
+        <p class="section-note">先选交付物，再选工具。<br>错误的路线通常也能「跑起来」。</p>
+      </div>
+
+      <div class="route-tabs" id="routeTabs" role="tablist" aria-label="选择需求场景"></div>
+      <div class="route-brief reveal" id="routeBrief"></div>
+      <div class="route-grid">
+        <article class="route-card fit reveal" id="routeFit"></article>
+        <article class="route-card wrong reveal" id="routeWrong"></article>
+      </div>
+      <div class="route-trigger reveal" id="routeTrigger"></div>
+    </div>
+  </section>
+
+  <!-- GATES -->
+  <section class="gates-section" id="gates">
+    <div class="shell">
+      <div class="section-head">
+        <div>
+          <p class="kicker">04 / ACCEPTANCE GATES</p>
+          <h2>它能工作，<br>不等于它值得交付</h2>
+        </div>
+        <p class="section-note">切换「冒烟测试 / 完整验收」，<br>看同一个项目如何得到两种结论。</p>
+      </div>
+
+      <div class="gate-controls reveal">
+        <div class="gate-cases" id="gateCases" role="tablist" aria-label="选择案例"></div>
+        <div class="gate-modes" id="gateModes" role="group" aria-label="选择验收模式"></div>
+      </div>
+      <p class="gate-summary" id="gateSummary"></p>
+      <div class="gate-grid" id="gateGrid"></div>
+      <div class="gate-verdict reveal" id="gateVerdict"></div>
+    </div>
+  </section>
+
+  <!-- CASES -->
+  <section class="cases-section" id="cases">
+    <div class="shell">
+      <div class="section-head">
+        <div>
+          <p class="kicker">05 / CASE FILES</p>
+          <h2>三次实验，<br>三次诚实的验收</h2>
+        </div>
+        <p class="section-note">包括失败、返工与终止。<br>它们比成功更能说明验收标准。</p>
+      </div>
+
+      <div class="case-grid">
+        <article class="case-card reveal">
+          <a class="case-img" href="https://github.com/rittenpoems-beep/workflow-decomposition/blob/main/cases/01-threejs-vs-blender.md" target="_blank" rel="noopener">
+            <img src="assets/images/rainy-mart-threejs.jpg" alt="雨夜便利店 Three.js 场景" loading="lazy">
+            <span class="case-tag">CASE 01 / 三维</span>
+          </a>
+          <div class="case-body">
+            <h3>同一份三维简报，两条技术路线</h3>
+            <p>Three.js 与 Blender 都可能是对的。决定路线的不是模型偏好，而是交付物、编辑方式与运行环境。</p>
+            <ul class="case-stats">
+              <li><b>2,101</b><span>primitives</span></li>
+              <li><b>36.9</b><span>fps @ 1440×1080</span></li>
+              <li><b>0</b><span>离线外部请求</span></li>
+            </ul>
+            <a class="text-link" href="https://github.com/rittenpoems-beep/workflow-decomposition/blob/main/cases/01-threejs-vs-blender.md" target="_blank" rel="noopener">读案例 ↗</a>
+          </div>
+        </article>
+
+        <article class="case-card reveal">
+          <a class="case-img" href="https://github.com/rittenpoems-beep/workflow-decomposition/blob/main/cases/02-ace-studio.md" target="_blank" rel="noopener">
+            <img src="assets/images/music-overview.jpg" alt="15 秒音乐的结构、频谱与段落电平总览" loading="lazy">
+            <span class="case-tag">CASE 02 / 音乐</span>
+          </a>
+          <div class="case-body">
+            <h3>当工具是对的，作品仍然不对</h3>
+            <p>ACE Studio 能导出 7 条人声轨，所有指标都合格。但咬字、旋律与段落弧线，仍然需要人的耳朵来验收。</p>
+            <ul class="case-stats">
+              <li><b>3:04</b><span>时长</span></li>
+              <li><b>76</b><span>小节</span></li>
+              <li><b>7</b><span>人声轨</span></li>
+            </ul>
+            <a class="text-link" href="https://github.com/rittenpoems-beep/workflow-decomposition/blob/main/cases/02-ace-studio.md" target="_blank" rel="noopener">读案例 ↗</a>
+          </div>
+        </article>
+
+        <article class="case-card reveal">
+          <a class="case-img" href="https://github.com/rittenpoems-beep/workflow-decomposition/blob/main/cases/03-delivery-gap.md" target="_blank" rel="noopener">
+            <img src="assets/images/quiet-room.jpg" alt="Quiet Room 室内场景静帧" loading="lazy">
+            <span class="case-tag">CASE 03 / 交付</span>
+          </a>
+          <div class="case-body">
+            <h3>能打开、能出图，然后呢</h3>
+            <p>Quiet Room 与 Alpine Drive 都有能看的静帧。但「能打开、能渲染」只是最低标准，不是可交付。</p>
+            <ul class="case-stats">
+              <li><b>2,224</b><span>对象</span></li>
+              <li><b>189</b><span>打包贴图</span></li>
+              <li><b>0</b><span>完成版动画</span></li>
+            </ul>
+            <a class="text-link" href="https://github.com/rittenpoems-beep/workflow-decomposition/blob/main/cases/03-delivery-gap.md" target="_blank" rel="noopener">读案例 ↗</a>
+          </div>
+        </article>
+      </div>
+
+      <div class="media-row">
+        <article class="audio-card reveal">
+          <div class="audio-head">
+            <div>
+              <p class="kicker">LISTEN / 15 SEC</p>
+              <h3>Pride &amp; Envy (Douyin cut)</h3>
+            </div>
+            <span class="audio-badge">CC BY 4.0</span>
+          </div>
+          <p>15.36 s · 140.625 BPM · C 小调 · 9 小节。采样 MIDI 路线，21 条分轨，−9.18 LUFS / 真峰 −1.13 dBTP。</p>
+          <audio controls preload="metadata" src="assets/audio/pride-envy-15s.mp3">你的浏览器不支持音频播放。</audio>
+          <div class="audio-foot">
+            <a class="text-link" href="https://github.com/rittenpoems-beep/ritten-musicByAI" target="_blank" rel="noopener">完整工程与分轨 ↗</a>
+            <span>Ritten · CC BY 4.0</span>
+          </div>
+        </article>
+
+        <article class="demo-card reveal">
+          <p class="kicker">DEMO / THREE.JS</p>
+          <h3>雨夜便利店</h3>
+          <p>2,101 个图元、247,038 三角形、255 draw calls。拖动旋转、滚轮缩放、右键平移。</p>
+          <a class="btn primary" href="demos/rainy-night-mart/index.html">打开三维场景 ↗</a>
+          <span class="demo-note">需联网加载 Three.js CDN</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORKSHEET -->
+  <section class="worksheet-section" id="worksheet">
+    <div class="shell">
+      <div class="section-head">
+        <div>
+          <p class="kicker">06 / WORKSHEET</p>
+          <h2>把你的下一个项目，<br>拆成可验收的阶段</h2>
+        </div>
+        <p class="section-note">先填定义与验收，再让 AI 执行。<br>生成 Markdown，可直接放进仓库。</p>
+      </div>
+
+      <div class="ws-layout">
+        <form class="ws-form" id="wsForm">
+          <div class="ws-row two">
+            <label>项目名称<input type="text" name="project" placeholder="例如：雨夜便利店三维场景" autocomplete="off"></label>
+            <label>受众 / 场景<input type="text" name="audience" placeholder="谁会看、在哪看、用来做什么" autocomplete="off"></label>
+          </div>
+          <label>一句话目标<textarea name="goal" rows="2" placeholder="用一句话说清要完成什么"></textarea></label>
+          <label>交付物定义<textarea name="deliverable" rows="3" placeholder="形态、格式、运行方式、性能/规格预算；以及不交付什么"></textarea></label>
+          <label>参照与标准<textarea name="reference" rows="3" placeholder="至少 3 个参照；每个参照看什么、达到什么程度"></textarea></label>
+          <label>阶段拆解<textarea name="stages" rows="6" placeholder="每个阶段写清：输入 → 输出 → AI 做什么 → 人做什么 → 验收标准"></textarea></label>
+          <label>路线候选<textarea name="routes" rows="3" placeholder="A / B / C 三条路线；交付物、成本、风险、是否匹配"></textarea></label>
+          <label>验收标准<textarea name="acceptance" rows="4" placeholder="四道闸门：能运行 / 符合规格 / 符合参照 / 愿意签字"></textarea></label>
+          <div class="ws-row two">
+            <label>不做什么<textarea name="notDoing" rows="3" placeholder="明确排除的范围"></textarea></label>
+            <label>停止条件<textarea name="stop" rows="3" placeholder="什么情况下停止或换路线"></textarea></label>
+          </div>
+          <div class="ws-actions">
+            <button type="button" class="btn primary" id="wsGenerate">生成 Markdown</button>
+            <button type="button" class="btn ghost" id="wsExample">载入示例</button>
+            <button type="button" class="btn ghost" id="wsClear">清空</button>
+          </div>
+        </form>
+
+        <div class="ws-output">
+          <div class="ws-output-head">
+            <span>MARKDOWN PREVIEW</span>
+            <div>
+              <button type="button" class="mini-btn" id="wsCopy">复制</button>
+              <button type="button" class="mini-btn" id="wsDownload">下载 .md</button>
+            </div>
+          </div>
+          <pre id="wsPreview">填完左侧内容，点击「生成 Markdown」。
+
+工作表会输出：目标、交付物、参照、阶段、路线、验收标准、不做什么、停止条件。</pre>
+          <p class="ws-hint" id="wsHint">提示：验收标准要可观察、可对照；「更真实」「更高级」不是标准。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLOSING -->
+  <section class="closing">
+    <div class="shell">
+      <p class="kicker">CODA / 结语</p>
+      <blockquote>在越来越多的领域，<br>理解一项专业工作如何完成，<br>正在成为亲自完成这项工作的入口。</blockquote>
+      <div class="closing-actions">
+        <a class="btn primary" href="#article">重读文章</a>
+        <a class="btn ghost" href="https://github.com/rittenpoems-beep/workflow-decomposition" target="_blank" rel="noopener">查看仓库 ↗</a>
+        <a class="btn ghost" href="https://github.com/rittenpoems-beep/workflow-decomposition/blob/main/templates/workflow-decomposition-worksheet.md" target="_blank" rel="noopener">下载工作表 ↗</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="shell">
+    <div class="footer-grid">
+      <div>
+        <p class="footer-mark">拆</p>
+        <p class="footer-title">Workflow Decomposition<br>Is All You Need</p>
+        <p class="footer-note">Ritten Poems · 2026.10</p>
+      </div>
+      <div>
+        <p class="footer-label">读</p>
+        <a href="https://github.com/rittenpoems-beep/workflow-decomposition/blob/main/article/workflow-decomposition.md" target="_blank" rel="noopener">文章全文</a>
+        <a href="https://github.com/rittenpoems-beep/workflow-decomposition/blob/main/docs/methodology.md" target="_blank" rel="noopener">方法论</a>
+        <a href="https://github.com/rittenpoems-beep/workflow-decomposition/blob/main/docs/evidence.md" target="_blank" rel="noopener">证据与边界</a>
+      </div>
+      <div>
+        <p class="footer-label">用</p>
+        <a href="#atlas">工作流地图</a>
+        <a href="#gates">验收闸门</a>
+        <a href="#worksheet">拆解工作表</a>
+      </div>
+      <div>
+        <p class="footer-label">授权</p>
+        <a href="https://github.com/rittenpoems-beep/workflow-decomposition/blob/main/LICENSE" target="_blank" rel="noopener">代码 MIT</a>
+        <a href="https://github.com/rittenpoems-beep/workflow-decomposition/blob/main/LICENSE-CONTENT" target="_blank" rel="noopener">文字与图示 CC BY 4.0</a>
+        <a href="https://github.com/rittenpoems-beep/workflow-decomposition/blob/main/CREDITS.md" target="_blank" rel="noopener">来源与致谢</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Ritten Poems</span>
+      <span>Built as a static field manual · No tracking</span>
+    </div>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="查看大图" hidden>
+  <button class="lb-close" id="lbClose" aria-label="关闭">×</button>
+  <div class="lb-inner">
+    <img id="lbImg" alt="">
+    <p id="lbCaption"></p>
+  </div>
+</div>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/site.js"></script>
+</body>
+</html>

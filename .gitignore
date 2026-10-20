@@ -1,0 +1,23 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# logs / temp
+*.log
+.scratch/
+tmp/
+
+# dependencies (site has none, but keep the repo clean)
+node_modules/
+npm-debug.log*
+
+# local environment
+.env
+.env.*
+!.env.example
+
+# build artifacts that should not be published
+dist/
